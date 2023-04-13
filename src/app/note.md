@@ -14,3 +14,10 @@
     Jetzt im Terminal neue app erstellen lassen: > ng g c slideshow (ENTER)
     ACHTUNG: bei import noch onInit hinzufügen: import { Component, OnInit } from '@angular/core';
     (LÖSCHEN GEHT SO: Orner Löschen, bei import löschen und bei declaration löschen)
+6. menu erstellen:
+    - Terminal
+    - in app einbinden
+    ACHTUNG on init einfügen:
+    constructor(){ }
+    ngOnInit(): void{}
+7. Link designen: In CSS NEU: & nicht vergessen.
