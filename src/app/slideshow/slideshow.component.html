@@ -1,0 +1,13 @@
+
+<div class="slideshow-container">
+    <img *ngIf="showImage" class= "img-slideshow" src="../assets/images/{{images[currentImage]}}"> <!--- 1. NEU: Man kann eine Variable einfügen statt den Pfad  -->
+</div> <!----1.  die ngIf ist eine bulien Variable die entweder true oder false sein kann--->  
+
+
+<div class="slideshow-container slideshow-overlay"> <!---2.1 & 3. -->
+    <p *ngIf="showImage" class="fadeIn">
+        {{ headlines[currentImage] }}
+    </p>
+</div>
+
+
