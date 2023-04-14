@@ -1,2 +1,7 @@
-<app-menu></app-menu> <!--EINBINDUNG VON NEUER COMPONENT -->
-<app-slideshow></app-slideshow> <!--EINBINDUNG VON NEUER COMPONENT -->
+<app-menu [darkMode]= "router.url !== '/'"></app-menu> <!--EINBINDUNG VON NEUER COMPONENT 11. 12. -->
+<div [class.container]= "router.url !=='/'">                                 <!--14. 15. Nur Einbindung, wenn nicht / (Start-URL) -->
+
+
+    <router-outlet></router-outlet>    <!--8.  -->
+
+</div>

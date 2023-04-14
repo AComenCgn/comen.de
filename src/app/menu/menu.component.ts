@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';      // 6.
+import { Component, OnInit, Input } from '@angular/core';      // 6. // 11. 
 
 @Component({
   selector: 'app-menu',
@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';      // 6.
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {      // 6.
+  @Input()darkMode = true;                       // 11.                            
   constructor(){ }
-  ngOnInit(): void{}
+
+  ngOnInit(): void{
+  }
 
 }
